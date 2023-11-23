@@ -1,2 +1,42 @@
-There should be two inputs, one for old password and one for new password.
-And a button below.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .custom-form {
+            max-width: 300px;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="custom-form">
+            <h3 class="text-center mb-4">Update Profile</h3>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="oldPassword">Old Password:</label>
+                    <input type="password" class="form-control" id="oldPassword" name="oldPassword" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPassword">New Password:</label>
+                    <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Update Password</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

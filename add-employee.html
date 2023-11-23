@@ -20,53 +20,101 @@
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a href="#" class="nav-link active" aria-current="page">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                  <i class="bi bi-house"></i>
                   Home
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                  Dashboard
+                  <i class="bi bi-upload"></i>
+                  Upload Excel
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                  Orders
+                  <i class="bi bi-plus-circle-fill"></i>
+                  Add Employee
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                  Products
+                  <i class="bi bi-plus-circle-fill"></i>
+                  Add Advance
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Customers
+                  <i class="bi bi-plus-circle-fill"></i>
+                  Add P.F.
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Sign Out
+                  <i class="bi bi-flag-fill"></i>
+                  Salary Report
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="bi bi-flag-fill"></i>
+                  Employee Report
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="bi bi-flag-fill"></i>
+                  Update Report
                 </a>
               </li>
             </ul>
           </aside>
         </div>
-        <div class="col-md-10">
-          <main class="mx-5">
-            <h1 class="fw-bold mb05">Add Employee</h1>
-
-            // form goes here...
+        <div class="col-md-10  container mt-5">
+          <main class="mx-5" >
+            <h3 class="fw-bold mb05">Add Employee</h3>
+            <form action="#" method="post" class="border border-bottom grey p-4">
+              <label for="name" class="mb-3">1. Name:</label>
+              <input type="text" id="name" name="name" required><br>
+      
+              <label for="phone" class="mb-3">2. Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required><br>
+      
+              <label for="biometric"class="mb-3">3. Biometric Employee Code:</label>
+              <input type="text" id="biometric" name="biometric" required><br>
+      
+              <label for="image"class="mb-3">4. Image:</label>
+              <input type="file" id="image" name="image" accept="image/*"><br>
+      
+              <label for="perDaySalary"class="mb-3">5. Per Day Salary:</label>
+              <input type="number" id="perDaySalary" name="perDaySalary" required><br>
+      
+              <label for="workingHours"class="mb-3">6. Working Hours:</label>
+              <input type="number" id="workingHours" name="workingHours" required><br>
+      
+              <label for="otAmount"class="mb-3">7. OT Amount per Hour:</label>
+              <input type="number" id="otAmount" name="otAmount" required><br>
+      
+              <label for="noOt" class="mb-3">8. Should not calculate OT:</label>
+              <input type="checkbox" id="noOt" name="noOt"><br>
+      
+              <label for="noBiometric" class="mb-3">9. Does not have Biometric:</label>
+              <input type="checkbox" id="noBiometric" name="noBiometric"><br>
+      
+              <label for="department" class="mb-3">10. Department:</label>
+              <select id="department" name="department">
+                  <option value="hr">HR</option>
+                  <option value="finance">Finance</option>
+                  <option value="it">IT</option>
+              </select><br>
+      
+              <label for="vehicleNumber" class="mb-3">11. Vehicle Number:</label>
+              <input type="text" id="vehicleNumber" name="vehicleNumber"><br>
+      
+              <input type="submit" value="Submit">
+          </form>
           </main>
         </div>
       </div>
     </div>
-    <script src="/js/popper.js"></script>
-    <script src="/js/bootstrap.bundle.js"></script>
   </body>
 </html>

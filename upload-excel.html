@@ -1,6 +1,54 @@
-Upload Excel.
+<!-- Upload Excel.
 
 Just add the input file selection
-and a button with text "upload"
+and a button with text "upload" -->
 
-Below that, we need a table with the same table headers
+<!-- Below that, we need a table with the same table headers -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel-style Table Form</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        th, td {
+            text-align: center;
+            padding: 8px;
+        }
+        thead {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Upload Excel</h1>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Choose File:</label>
+                <input type="file" class="form-control-file" id="file" name="file" accept=".xlsx, .xls">
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3">Save</button>
+        </form>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Date</th>
+                    <th>IN/OUT</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
