@@ -72,46 +72,87 @@
         <div class="col-md-10  container mt-5">
           <main class="mx-5" >
             <h3 class="fw-bold mb05">Add Employee</h3>
-            <form action="#" method="post" class="border border-bottom grey p-4">
-              <label for="name" class="mb-3">1. Name:</label>
-              <input type="text" id="name" name="name" required><br>
-      
-              <label for="phone" class="mb-3">2. Phone Number:</label>
-              <input type="tel" id="phone" name="phone" required><br>
-      
-              <label for="biometric"class="mb-3">3. Biometric Employee Code:</label>
-              <input type="text" id="biometric" name="biometric" required><br>
-      
-              <label for="image"class="mb-3">4. Image:</label>
-              <input type="file" id="image" name="image" accept="image/*"><br>
-      
-              <label for="perDaySalary"class="mb-3">5. Per Day Salary:</label>
-              <input type="number" id="perDaySalary" name="perDaySalary" required><br>
-      
-              <label for="workingHours"class="mb-3">6. Working Hours:</label>
-              <input type="number" id="workingHours" name="workingHours" required><br>
-      
-              <label for="otAmount"class="mb-3">7. OT Amount per Hour:</label>
-              <input type="number" id="otAmount" name="otAmount" required><br>
-      
-              <label for="noOt" class="mb-3">8. Should not calculate OT:</label>
-              <input type="checkbox" id="noOt" name="noOt"><br>
-      
-              <label for="noBiometric" class="mb-3">9. Does not have Biometric:</label>
-              <input type="checkbox" id="noBiometric" name="noBiometric"><br>
-      
-              <label for="department" class="mb-3">10. Department:</label>
-              <select id="department" name="department">
-                  <option value="hr">HR</option>
-                  <option value="finance">Finance</option>
-                  <option value="it">IT</option>
-              </select><br>
-      
-              <label for="vehicleNumber" class="mb-3">11. Vehicle Number:</label>
-              <input type="text" id="vehicleNumber" name="vehicleNumber"><br>
-      
-              <input type="submit" value="Submit">
-          </form>
+            <div class="container mt-5">
+              <form class="border border-dark p-4">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="mb-3">
+                              <label for="exampleInputName" class="form-label">1. Name</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="examplePhonenumber" class="form-label">2. Phone Number</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="Employeecode">3. Biometric Employee Code</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleImage" class="form-label">4. Image</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="examplePerDaySalary" class="form-label">5. Per Day Salary</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="WorkingHours">6. Working Hours</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="AmountPerHour">7. OT Amount per Hour</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="NotcalculateOT">8. Should not calculate OT</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="NoBiometric">9. Does not have Biometric</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="Department">10. Department</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="Vehiclenumber">11. Vehicle Number</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="exampleInputName">
+                          </div>
+                          <div class="mb-3">
+                              <input type="tel" class="form-control" id="examplePhonenumber">
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="Employeecode">
+                          </div>
+                          <div class="mb-3">
+                              <input type="file" class="form-control" id="exampleImage" accept="image/*">
+                          </div>
+                          <div class="mb-3">
+                              <input type="tel" class="form-control" id="examplePerDaySalary">
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="WorkingHours">
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="AmountPerHour">
+                          </div>
+                          <div class="mb-3">
+                              <input type="checkbox" class="form-check-input" id="NotcalculateOT">
+                          </div>
+                          <div class="mb-3">
+                              <input type="checkbox" class="form-check-input" id="NoBiometric">
+                          </div>
+                          <div class="mb-3">
+                            <select id="Department" name="department">
+                              <option value="hr">HR</option>
+                              <option value="finance">Finance</option>
+                              <option value="it">IT</option>
+                          </select>
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="Vehiclenumber">
+                          </div>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
           </main>
         </div>
       </div>
