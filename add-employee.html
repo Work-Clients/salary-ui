@@ -20,53 +20,142 @@
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a href="#" class="nav-link active" aria-current="page">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                  <i class="bi bi-house"></i>
                   Home
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                  Dashboard
+                  <i class="bi bi-upload"></i>
+                  Upload Excel
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                  Orders
+                  <i class="bi bi-plus-circle-fill"></i>
+                  Add Employee
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                  Products
+                  <i class="bi bi-plus-circle-fill"></i>
+                  Add Advance
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Customers
+                  <i class="bi bi-plus-circle-fill"></i>
+                  Add P.F.
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Sign Out
+                  <i class="bi bi-flag-fill"></i>
+                  Salary Report
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="bi bi-flag-fill"></i>
+                  Employee Report
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="bi bi-flag-fill"></i>
+                  Update Report
                 </a>
               </li>
             </ul>
           </aside>
         </div>
-        <div class="col-md-10">
-          <main class="mx-5">
-            <h1 class="fw-bold mb05">Add Employee</h1>
-
-            // form goes here...
+        <div class="col-md-10  container mt-5">
+          <main class="mx-5" >
+            <h3 class="fw-bold mb05">Add Employee</h3>
+            <div class="container mt-5">
+              <form class="border border-dark p-4">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="mb-3">
+                              <label for="exampleInputName" class="form-label">1. Name</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="examplePhonenumber" class="form-label">2. Phone Number</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="Employeecode">3. Biometric Employee Code</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleImage" class="form-label">4. Image</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="examplePerDaySalary" class="form-label">5. Per Day Salary</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="WorkingHours">6. Working Hours</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="AmountPerHour">7. OT Amount per Hour</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="NotcalculateOT">8. Should not calculate OT</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="NoBiometric">9. Does not have Biometric</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="Department">10. Department</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label" for="Vehiclenumber">11. Vehicle Number</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="exampleInputName">
+                          </div>
+                          <div class="mb-3">
+                              <input type="tel" class="form-control" id="examplePhonenumber">
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="Employeecode">
+                          </div>
+                          <div class="mb-3">
+                              <input type="file" class="form-control" id="exampleImage" accept="image/*">
+                          </div>
+                          <div class="mb-3">
+                              <input type="tel" class="form-control" id="examplePerDaySalary">
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="WorkingHours">
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="AmountPerHour">
+                          </div>
+                          <div class="mb-3">
+                              <input type="checkbox" class="form-check-input" id="NotcalculateOT">
+                          </div>
+                          <div class="mb-3">
+                              <input type="checkbox" class="form-check-input" id="NoBiometric">
+                          </div>
+                          <div class="mb-3">
+                            <select id="Department" name="department">
+                              <option value="hr">HR</option>
+                              <option value="finance">Finance</option>
+                              <option value="it">IT</option>
+                          </select>
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="Vehiclenumber">
+                          </div>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
           </main>
         </div>
       </div>
     </div>
-    <script src="/js/popper.js"></script>
-    <script src="/js/bootstrap.bundle.js"></script>
   </body>
 </html>
