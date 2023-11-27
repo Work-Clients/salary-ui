@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,14 +7,12 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap-icons.css">
   </head>
-
   <body>
     <div class="container-fluid p-5">
       <div class="row">
         <div class="col-md-2">
           <aside>
-            <a href="/"
-              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
               <i class="bi bi-house-fill me-2" style="font-size: 2rem;"></i>
               <span class="fs-4">Home</span>
             </a>
@@ -72,29 +69,63 @@
             </ul>
           </aside>
         </div>
-        <div class="col-md-10 container">
+        <div class="col-md-10">
           <main class="mx-5">
-            <h1 class="fw-bold mb-5">Update Profile</h1>
+            <h1 class="fw-bold mb-5">Salary Report</h1>
 
-            <div class="row">
-              <div class="col-md-6 mx-auto shadow p-5">
-                <div class="mb-3">
-                  <label for="oldPassword" class="form-label">Current Password</label>
-                  <input type="text" class="form-control" id="oldPassword">
+            <form class="row row-cols-lg-auto g-3 align-items-center mb-5">
+              <div class="col-12">
+                <label class="visually-hidden" for="startDate">Username</label>
+                <div class="input-group">
+                  <div class="input-group-text">Start Date</div>
+                  <input type="date" class="form-control" id="startDate" placeholder="Username">
                 </div>
-
-                <div class="mb-3">
-                  <label for="newPassword" class="form-label">New Password</label>
-                  <input type="text" class="form-control" id="newPassword">
-                </div>
-
-                <button class="btn btn-secondary w-100">Update Password</button>
               </div>
-            </div>
+
+              <div class="col-12">
+                <label class="visually-hidden" for="endDate">Username</label>
+                <div class="input-group">
+                  <div class="input-group-text">End Date</div>
+                  <input type="date" class="form-control" id="endDate" placeholder="Username">
+                </div>
+              </div>
+            
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+
+            <table class="table">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <input type="date" class="form-control">
+                  </td>
+                  <td>
+                    <input type="date" class="form-control" placeholder="Amount">
+                  </td>
+                  <td>
+                    <button class="btn btn-primary btn-sm">Save</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </main>
         </div>
       </div>
     </div>
   </body>
-
 </html>

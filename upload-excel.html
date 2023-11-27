@@ -1,63 +1,118 @@
-<!-- Upload Excel.
-
-Just add the input file selection
-and a button with text "upload" -->
-
-<!-- Below that, we need a table with the same table headers -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel-style Table Form</title>
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        th, td {
-            text-align: center;
-            padding: 8px;
-        }
-        thead {
-            background-color: black;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mt-5">
-        <h1>Upload Excel</h1>
 
-        <form action="#" method="post" enctype="multipart/form-data">
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Choose File :</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+  </head>
 
-            <button type="submit" class="btn btn-primary mb-3">Save</button>
-        </form>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-2">
+          <aside>
+            <a href="/"
+              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <i class="me-3 bi bi-house-fill me-2" style="font-size: 2rem;"></i>
+              <span class="fs-4">Home</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                  <i class="me-3 bi bi-house"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-upload"></i>
+                  Upload Excel
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-person-add"></i>
+                  Add Employee
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-currency-rupee"></i>
+                  Add Advance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-piggy-bank"></i>
+                  Add P.F.
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-list-columns"></i>
+                  Salary Report
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-person-lines-fill"></i>
+                  Employee Report
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-body-emphasis">
+                  <i class="me-3 bi bi-person-workspace"></i>
+                  Update Report
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <main class="mx-5">
+            <h1 class="fw-bold mb-5">Upload Excel</h1>
 
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Employee ID</th>
-                    <th>Date</th>
-                    <th>IN/OUT</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>2023-11-23</td>
-                    <td>IN</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>2023-11-24</td>
-                    <td>OUT</td>
-                </tr>
-            </tbody>
-        </table>
+            <div class="mt-5">
+              <form action="">
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Select Excel File</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <button class="btn btn-primary">Upload</button>
+              </form>
+            </div>
+
+            <div class="mt-5">
+              <table class="table  align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Employee ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Punch Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      23
+                    </td>
+                    <td>28-11-2023</td>
+                    <td>In</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
+
 </html>

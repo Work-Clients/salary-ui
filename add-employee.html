@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap-icons.css">
   </head>
+
   <body>
     <div class="container-fluid p-5">
       <div class="row">
         <div class="col-md-2">
           <aside>
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <a href="/"
+              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
               <i class="bi bi-house-fill me-2" style="font-size: 2rem;"></i>
               <span class="fs-4">Home</span>
             </a>
@@ -69,93 +72,78 @@
             </ul>
           </aside>
         </div>
-        <div class="col-md-10  container mt-5">
-          <main class="mx-5" >
-            <h3 class="fw-bold mb05">Add Employee</h3>
-            <div class="container mt-5">
-              <form class="border border-dark p-4">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="mb-3">
-                              <label for="exampleInputName" class="form-label">1. Name</label>
-                          </div>
-                          <div class="mb-3">
-                              <label for="examplePhonenumber" class="form-label">2. Phone Number</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="Employeecode">3. Biometric Employee Code</label>
-                          </div>
-                          <div class="mb-3">
-                              <label for="exampleImage" class="form-label">4. Image</label>
-                          </div>
-                          <div class="mb-3">
-                              <label for="examplePerDaySalary" class="form-label">5. Per Day Salary</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="WorkingHours">6. Working Hours</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="AmountPerHour">7. OT Amount per Hour</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="NotcalculateOT">8. Should not calculate OT</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="NoBiometric">9. Does not have Biometric</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="Department">10. Department</label>
-                          </div>
-                          <div class="mb-3">
-                              <label class="form-label" for="Vehiclenumber">11. Vehicle Number</label>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="mb-3">
-                              <input type="text" class="form-control" id="exampleInputName">
-                          </div>
-                          <div class="mb-3">
-                              <input type="tel" class="form-control" id="examplePhonenumber">
-                          </div>
-                          <div class="mb-3">
-                              <input type="text" class="form-control" id="Employeecode">
-                          </div>
-                          <div class="mb-3">
-                              <input type="file" class="form-control" id="exampleImage" accept="image/*">
-                          </div>
-                          <div class="mb-3">
-                              <input type="tel" class="form-control" id="examplePerDaySalary">
-                          </div>
-                          <div class="mb-3">
-                              <input type="text" class="form-control" id="WorkingHours">
-                          </div>
-                          <div class="mb-3">
-                              <input type="text" class="form-control" id="AmountPerHour">
-                          </div>
-                          <div class="mb-3">
-                              <input type="checkbox" class="form-check-input" id="NotcalculateOT">
-                          </div>
-                          <div class="mb-3">
-                              <input type="checkbox" class="form-check-input" id="NoBiometric">
-                          </div>
-                          <div class="mb-3">
-                            <select id="Department" name="department">
-                              <option value="hr">HR</option>
-                              <option value="finance">Finance</option>
-                              <option value="it">IT</option>
-                          </select>
-                          </div>
-                          <div class="mb-3">
-                            <input type="text" class="form-control" id="Vehiclenumber">
-                          </div>
-                      </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-          </div>
+        <div class="col-md-10 container">
+          <main class="mx-5">
+            <h1 class="fw-bold mb-5">Add Employee</h1>
+
+            <div class="row">
+              <div class="col-md-6 mx-auto shadow p-5">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Employee Name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Employee phone</label>
+                  <input type="text" class="form-control" id="phone">
+                </div>
+
+                <div class="mb-3">
+                  <label for="code" class="form-label">Employee code in Biometric Device</label>
+                  <input type="text" class="form-control" id="code">
+                </div>
+
+                <div class="mb-3">
+                  <label for="salaryPerDay" class="form-label">Employee salary per day</label>
+                  <input type="text" class="form-control" id="salaryPerDay">
+                </div>
+
+                <div class="mb-3">
+                  <label for="workingHours" class="form-label">Employee working hours</label>
+                  <input type="text" class="form-control" id="workingHours">
+                </div>
+
+                <div class="mb-3">
+                  <label for="otAmountPerHour" class="form-label">Employee OT amount per hour</label>
+                  <input type="text" class="form-control" id="otAmountPerHour">
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="shouldNotCalculateOT">
+                  <label class="form-check-label" for="shouldNotCalculateOT">
+                    Should Not Calculate OT
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="doesNotHaveBiometric">
+                  <label class="form-check-label" for="doesNotHaveBiometric">
+                    Does Not Have Biometric
+                  </label>
+                </div>
+
+                <div class="my-3">
+                  <label for="department">Department</label>
+                  <select id="department" name="department" class="form-select">
+                    <option value="">Select</option>
+                    <option value="hr">HR</option>
+                    <option value="finance">Finance</option>
+                    <option value="it">IT</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="avatar" class="form-label">Employee Image</label>
+                  <input class="form-control" type="file" id="avatar">
+                </div>
+
+                <button class="btn btn-secondary w-100">Add Employee</button>
+              </div>
+            </div>
           </main>
         </div>
       </div>
     </div>
   </body>
+
 </html>
